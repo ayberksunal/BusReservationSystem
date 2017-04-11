@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bus_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ayberk.busreservationsystem.BusPage"
+>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spDest"
+            android:layout_centerVertical="true" />
+
+    <TextView
+        android:text="Search Bus"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:layout_marginTop="180dp"
+        android:layout_below="@+id/spDest"
+        android:background="@drawable/rounded"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold"
+        android:padding="17dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="17sp"
+        android:onClick="searchBusButton"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spOrigin"
+        android:layout_marginBottom="54dp"
+        android:popupBackground="@android:color/white"
+        android:layout_above="@+id/spDest"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#ffffff"
+        android:textSize="17sp"
+        android:layout_marginTop="42dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:background="@drawable/round"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/spOrigin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spDest"
+        android:id="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>
